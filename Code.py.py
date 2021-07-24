@@ -33,6 +33,8 @@ plt.show()
 print(x_test)
 y_pred=Regression.predict(x_test)
 
+
+
 df=pd.DataFrame({'Actual':y_test,'Predction':y_pred})
 df
 
@@ -42,3 +44,5 @@ predict=Regression.predict(scores_pred)
 print('no.of hours={}'.format(9.5))
 print('predicted={}'.format(predict[0]))
 
+from sklearn import metrics
+print("Mean Absoulte Error:",metrics.mean_absolute_error(y_test,y_pred))
