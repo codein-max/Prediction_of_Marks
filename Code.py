@@ -34,10 +34,6 @@ print(x_test)
 y_pred=Regression.predict(x_test)
 
 
-
-df=pd.DataFrame({'Actual':y_test,'Predction':y_pred})
-df
-
 scores_pred=np.array([9.25])
 scores_pred=scores_pred.reshape(-1,1)
 predict=Regression.predict(scores_pred)
